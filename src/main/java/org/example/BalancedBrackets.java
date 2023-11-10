@@ -3,7 +3,11 @@ package org.example;
 //Балансировка скобок
 import java.util.*;
 public class BalancedBrackets {
-    // Function to check if brackets are balanced
+    /**
+     *
+     * @param expr - algebraic expression in infix form
+     * @return whether the parentheses in the expression are balanced or not
+     */
     static boolean areBracketsBalanced(String expr) {
 // Using ArrayDeque is faster than using Stack class
         Deque<Character> stack = new ArrayDeque<Character>();

@@ -12,6 +12,11 @@ public class ShuntingYard {
             '-', 1
     );
 
+    /**
+     *
+     * @param infix - algebraic expression in infix form
+     * @return algebraic expression in postfix form
+     */
     public static String infixToPostfix(String infix) {
         StringBuilder output = new StringBuilder();
         Deque<Character> stack = new ArrayDeque<>();

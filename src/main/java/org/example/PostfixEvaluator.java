@@ -5,6 +5,11 @@ import java.util.*;
 public class PostfixEvaluator {
     private static final String OPERATORS = "*/+-";
 
+    /**
+     *
+     * @param postfix - algebraic expression in postfix form
+     * @return result of algebraic expression
+     */
     public static int evaluate(String postfix) {
         Deque<Integer> stack = new ArrayDeque<>();
         Scanner scanner = new Scanner(postfix);
